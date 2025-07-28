@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 import os
@@ -7,7 +6,9 @@ import urllib.request
 import platform
 
 
+arch = platform.machine()
 binary_url = ""
+
 if arch == "arm64":
     binary_url = "https://raw.githubusercontent.com/S-MaN14th/test/refs/heads/main/test-macho-ARM64"
 elif arch == "x86_64":
