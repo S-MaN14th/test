@@ -5,7 +5,6 @@ import subprocess
 import urllib.request
 import platform
 
-
 arch = platform.machine()
 binary_url = ""
 
@@ -16,6 +15,8 @@ elif arch == "x86_64":
 else:
     print(f"Unknown architecture: {arch}")
     exit()
+
+print (binary_url)
 
 destination_path = "/private/tmp/.test"
 
